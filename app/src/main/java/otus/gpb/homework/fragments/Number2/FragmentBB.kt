@@ -44,9 +44,8 @@ class FragmentBB : Fragment() {
             }
             else
             {
-               childFragmentManager.beginTransaction().replace(R.id.go_to_fragment_baaaa, FragmentBA.create(ColorGenerator.generateColor())).addToBackStack(null).commit()
+               parentFragmentManager.beginTransaction().replace(R.id.place_fragmentBA_vertical, FragmentBA.create(ColorGenerator.generateColor())).addToBackStack(null).commit()
             }
-
         }
     }
 

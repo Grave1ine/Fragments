@@ -43,9 +43,9 @@ class FragmentBA : Fragment() {
 
         view.findViewById<Button>(R.id.go_to_fragmentBB).setOnClickListener() {
 
-            childFragmentManager
+            parentFragmentManager
                 .beginTransaction()
-                .add(R.id.place_fragmentBB_vertical, FragmentBB())
+                .add(R.id.place_fragmentBA_vertical, FragmentBB())
                 .addToBackStack(null)
                 .commit()
         }

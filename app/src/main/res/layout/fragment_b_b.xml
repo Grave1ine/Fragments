@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Number2.FragmentBB"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:ignore="UselessParent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="FragmentBB"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+            <Button
+                android:id="@+id/go_to_fragmentBA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="send color">
+            </Button>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/go_to_fragment_baaaa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints" />
+
+
+</FrameLayout>

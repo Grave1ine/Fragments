@@ -1,5 +1,6 @@
 package otus.gpb.homework.fragments.Number2
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -27,6 +28,7 @@ class FragmentBA : Fragment() {
             fragment.arguments = arguments
             return fragment
         }
+        fun create(): FragmentBA = FragmentBA()
     }
 
     override fun onCreateView(
@@ -50,12 +52,9 @@ class FragmentBA : Fragment() {
                 .commit()
         }
 
-        val background = arguments?.getInt(ARG_VALUE)
-        if (background != null) {
-            text.setTextColor(background)
+        parentFragmentManager.setFragmentResultListener("color_from_bb", this) {_ , result ->
+            val color = result.getInt ("color")
+            text.setTextColor(color)
         }
-
     }
-
-
 }
